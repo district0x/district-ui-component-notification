@@ -13,4 +13,3 @@ pom.xml.asc
 /node_modules/
 /figwheel_server.log
 /tests-output/
-/district-ui-web3-tx-log.iml
