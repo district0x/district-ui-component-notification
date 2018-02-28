@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[district0x/district-ui-notification "1.0.0-SNAPSHOT"]
+  :dependencies [[district0x/district-ui-notification "1.0.0"]
                  [org.clojure/clojurescript "1.9.946"]
                  [re-frame "0.10.5"]
                  [soda-ash "0.76.0"]]
