@@ -1,11 +1,11 @@
 # district-ui-component-notification
 
-Clojurescript [mount](https://github.com/tolitius/mount) + [re-frame](https://github.com/Day8/re-frame) component for a district UI, that provides [reagent](https://github.com/reagent-project/reagent) UI component for notifications, as well as related re-frame events and subscriptions.
+Clojurescript [mount](https://github.com/tolitius/mount) + [re-frame](https://github.com/Day8/re-frame) component for a district UI, that provides [reagent](https://github.com/reagent-project/reagent) UI component for notifications.
 
 ## Installation
 
-Add `[district0x/district-ui-component-notification "1.0.0"]` into your project.clj
-Include `[district.ui.component.notification]` in your CLJS file
+Add `[district0x/district-ui-component-notification "1.0.0"]` into your project.clj.<br/>
+Include `[district.ui.component.notification]` in your CLJS file.
 
 ## Module dependencies
 
@@ -33,5 +33,5 @@ It subscribes to the `::notification` sub of the [district-ui-notification](http
   (-> (mount/with-args {:district-ui-notification {:default-show-duration 1000}})
       (mount/start))
   (r/render [main-panel] (.getElementById js/document "app"))
-   (re-frame/dispatch-sync [::events/show "foobar"]))
+    (re-frame/dispatch-sync [::events/show "foobar"]))
 ```
