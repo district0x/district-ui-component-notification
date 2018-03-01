@@ -7,11 +7,11 @@
 (defn notification []
   (fn [{:keys [:action-button-props] :as props}]
     (let [{:keys [:open? :message :action-href]} @(re-frame/subscribe [::subs/notification])]
-      [:div.snackbar
+      [:div.notification
        (r/merge-props
         {:class (when open? "open")}
         (dissoc props :action-button-props))
-       [:div.snackbar-message message]
+       [:div.notification-message message]
        (when action-href
          [ui/Button
           (r/merge-props
