@@ -27,11 +27,11 @@ It subscribes to the `::notification` sub of the [district-ui-notification](http
 
 (defn main-panel []
   [:div.app
-    [notification/notification]])
+   [notification/notification]])
 
 (defn ^:export init []
   (-> (mount/with-args {:district-ui-notification {:default-show-duration 1000}})
       (mount/start))
   (r/render [main-panel] (.getElementById js/document "app"))
-    (re-frame/dispatch-sync [::events/show "foobar"]))
+  (re-frame/dispatch-sync [::events/show "foobar"]))
 ```
