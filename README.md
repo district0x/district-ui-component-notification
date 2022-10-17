@@ -4,7 +4,7 @@ Clojurescript [mount](https://github.com/tolitius/mount) + [re-frame](https://gi
 
 ## Installation
 
-Add `[district0x/district-ui-component-notification "1.0.0"]` into your project.clj.<br/>
+Add [![Clojars Project](https://img.shields.io/clojars/v/district0x/district-ui-component-notification.svg)](https://clojars.org/district0x/district-ui-component-notification) into your project.clj.<br/>
 Include `[district.ui.component.notification]` in your CLJS file.
 
 ## Module dependencies
